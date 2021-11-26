@@ -1,0 +1,19 @@
+<div class="menu-list">
+
+  <div style="line-height: 40px; margin-top: 20px" *ngFor="let dish of menuListDishes">{{dish.name}} - {{dish.ingredients}}
+
+  <div class="btn-container">
+
+      <button class="btn-stroked-rounded-primary" aria-label="Delete a dish from menu" (click)="menuListEdit.emit(dish)">
+        <span>
+          <mat-icon>mode</mat-icon>
+        </span>
+      </button>
+
+      <button mat-mini-fab color="warn" aria-label="Delete a dish from menu" (click)="menuListDelete.emit(dish.id)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+
+  </div>
+</div>
