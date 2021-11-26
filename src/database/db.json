@@ -1,0 +1,9 @@
+{
+  "dishes": [
+    {
+      "name": "Pizza",
+      "ingredients": "any",
+      "id": 1
+    }
+  ]
+}
